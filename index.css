@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Lato', sans-serif;
+}
+nav{
+    background: rgba(255, 255, 255, 0.924);
+    backdrop-filter: blur(3px);
+    height: 75px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    -webkit-box-shadow: 0px 2px 26px -12px rgb(0 0 0 / 75%);
+    -moz-box-shadow: 0px 2px 26px -12px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 26px -12px rgb(0 0 0 / 75%);
+}
+nav .contenedor{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 70%;
+}
+nav div{
+    height: 100%;
+}
+.imagen img{
+    height: 75px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    line-height: 75px;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    padding: 0 20px;
+}
+header{
+    background-image: linear-gradient(-20deg, #1d24fc 0%, #5f2fff 100%);
+    height: 50vh;
+    padding-top: calc(50vh - 50px);
+}
+
+.circulo{
+    background: white;
+    width: 10px;
+    height: 10px;
+    clip-path: circle(50% at 50% 50%);
+    position: absolute;
+    top: 40%;
+    left: -100px;
+    transform: scale(20, 20) translate(2vw, -0.5vh);
+    transition-duration: 1s;
+}
+.circulo2{
+    background: white;
+    width: 10px;
+    height: 10px;
+    clip-path: circle(50% at 50% 50%);
+    position: absolute;
+    top: 40%;
+    left: -100px;
+    transform: scale(20, 20) translate(2vw, 1.5vh);
+    transition-duration: 1s;
+}
+.circulo3{
+    background: white;
+    width: 10px;
+    height: 10px;
+    clip-path: circle(50% at 50% 50%);
+    position: absolute;
+    top: 40%;
+    left: -100px;
+    transform: scale(20, 20) translate(1.5vw, 0.5vh);
+    transition-duration: 1s;
+}
+
+
+.presentacion{
+    width: 800px;
+    height: 150px;
+    margin: auto;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.presentacion h2{
+    font-size: 40px;
+    color: white;
+    text-shadow: 2px 2px black;
+    font-weight: 700;
+}
+.presentacion p{
+    color: white;
+    font-size: 22px;
+    font-weight: 400;
+}
+.ola{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.flecha{
+    background-color: black;
+    width: 40px;
+    height: 70px;
+    clip-path: polygon(50% 100%, 0% 60%, 40% 60%, 40% 0%, 60% 0%, 60% 60%, 100% 60%);
+    position: absolute;
+    bottom: 20vh;
+    left: calc(50vw - 20px);
+    animation: flecha1 1.5s linear infinite;
+}
+@keyframes flecha1{
+    0%{
+        bottom: 15vh;
+    }
+    50%{
+        bottom: 20vh;
+    }
+    100%{
+        bottom: 15vh;
+    }
+}
+.Proyectos{
+    background-color: white;
+    padding-top: 100px;
+    height: 600px;
+    background-color: #f2f2f2;
+}
+.Proyectos h1{
+    text-align: center;
+    font-size: 46px;
+    color: #1d24fc;
+    margin-bottom: 50px;
+    width: 100%;
+}
+.Proyectos .contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-evenly;
+}
+.proyecto{
+    width: 350px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 20px;
+    padding: 20px 5px;
+    -webkit-box-shadow: 0px 0px 40px -18px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 0px 40px -18px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 40px -18px rgba(0,0,0,0.5);
+}
+.proyecto img{
+    width: 300px;
+    border-radius: 20px;
+}
+.proyecto h2{
+    font-family: 'Domine', serif;
+    margin: 15px 0;
+    font-size: 32px;
+    font-weight: 700;
+}
+p{
+    font-size: 20px;
+    font-weight: 400;
+}
+.acerca-de-mi{
+    background-image: url("imagenes/StockSnap_5S8XMGLIMA.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+}
+.informacion{
+    width: 800px;
+    background: #f2f2f2;
+    border-radius: 20px;
+    margin: auto;
+    text-align: center;
+    padding: 0 10px 10px 10px;
+}
+.informacion h1{
+    text-align: center;
+    font-size: 46px;
+    color: #1d24fc;
+    margin-bottom: 20px;
+}
